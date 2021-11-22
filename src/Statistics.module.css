@@ -1,0 +1,36 @@
+.statistics {
+  padding: 40px;
+}
+.title {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: gray;
+}
+.stat-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  min-width: 30px;
+  border: 1px solid black;
+
+  text-align: center;
+  padding: 10px;
+}
+.item:not(:first-child) {
+  border-left: none;
+}
+.label {
+  margin-bottom: 5px;
+  color: gray;
+  font-size: 12px;
+}
+.percentage {
+  color: black;
+  font-weight: 500;
+}
