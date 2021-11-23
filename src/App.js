@@ -1,11 +1,11 @@
 import React from "react";
 // eslint-disable-next-line
 import styles from "./App.css";
-import user from "./user.json";
+import user from "./data/user.json";
 import Profile from "./Profile";
-import data from "./data.json";
+import data from "./data/data.json";
 import Statistics from "./Statistics";
-import friends from "./friends.json";
+import friends from "./data/friends.json";
 import FriendList from "./FriendList";
 export default function App() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import propTypes from "prop-types";
 // eslint-disable-next-line
-import styles from "./FriendList.module.css";
+import styles from "./FriendList.css";
 const FriendList = (props) => (
   <ul className="friend-list">
     {props.friends.map((el) => (
