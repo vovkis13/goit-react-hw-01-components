@@ -28,8 +28,9 @@ const Profile = (props) => (
 );
 Profile.propTypes = {
   avatar: propTypes.string,
-  username: propTypes.string,
-  tag: propTypes.string,
-  location: propTypes.string,
+  username: propTypes.string.isRequired,
+  tag: propTypes.string.isRequired,
+  location: propTypes.string.isRequired,
+  stats: propTypes.object,
 };
 export default Profile;

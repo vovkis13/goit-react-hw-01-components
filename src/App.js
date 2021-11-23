@@ -1,17 +1,16 @@
 import React from "react";
-// eslint-disable-next-line
-import styles from "./App.css";
-import user from "./data/user.json";
-import Profile from "./Profile";
-import data from "./data/data.json";
-import Statistics from "./Statistics";
-import friends from "./data/friends.json";
-import FriendList from "./FriendList";
-import transactions from "./data/transactions.json";
-import TransactionHistory from "./TransactionHistory";
+import styles from "./App.module.css";
+import user from "./profile/user.json";
+import Profile from "./profile/Profile";
+import data from "./statistics/data.json";
+import Statistics from "./statistics/Statistics";
+import friends from "./friendlist/friends.json";
+import FriendList from "./friendlist/FriendList";
+import transactions from "./transactionhistory/transactions.json";
+import TransactionHistory from "./transactionhistory/TransactionHistory";
 export default function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Profile
         username={user.username}
         tag={user.tag}

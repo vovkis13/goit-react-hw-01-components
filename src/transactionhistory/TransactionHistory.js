@@ -22,10 +22,9 @@ const TransactionHistory = (props) => (
   </table>
 );
 TransactionHistory.propTypes = {
-    id: propTypes.string,
-    type: propTypes.string,
-    amount: propTypes.string,
-    currency: propTypes.string,
+  id: propTypes.string.isRequired,
+  type: propTypes.string.isRequired,
+  amount: propTypes.string.isRequired,
+  currency: propTypes.string.isRequired,
 };
-
 export default TransactionHistory;

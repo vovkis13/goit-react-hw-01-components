@@ -1,0 +1,21 @@
+.transactionHistory thead th {
+  text-transform: uppercase;
+  background-color: mediumaquamarine;
+  color: white;
+}
+.transactionHistory th {
+  min-width: 150px;
+}
+.transactionHistory tr:nth-child(odd) {
+  background-color: white;
+}
+.transactionHistory tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+.transactionHistory td {
+  color: gray;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}

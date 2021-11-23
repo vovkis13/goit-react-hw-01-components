@@ -1,0 +1,9 @@
+.App {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px;
+  background-color: gainsboro;
+}
+.App > *:not(:last-child) {
+  margin-right: 50px;
+}
