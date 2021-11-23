@@ -7,8 +7,9 @@
   text-align: center;
   color: gray;
 }
-.stat-list {
+.statList {
   display: flex;
+  font-display: auto;
   padding: 0;
   list-style: none;
 }

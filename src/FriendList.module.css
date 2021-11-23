@@ -1,0 +1,13 @@
+.item {
+    display: flex;
+    align-items: center;
+    border: 1px solid black
+}
+
+.avatar {
+    display: block;
+    margin-right: 20px;
+}
+.name {
+    
+}

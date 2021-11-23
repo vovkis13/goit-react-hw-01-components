@@ -1,16 +1,16 @@
 import React from "react";
 import propTypes from "prop-types";
 // eslint-disable-next-line
-import styles from "./FriendList.css";
+import styles from "./FriendList.module.css";
 const FriendList = (props) => (
   <ul className="friend-list">
     {props.friends.map((el) => (
-      <li className="item" key={el.id}>
+      <li className={styles.item} key={el.id}>
         <span
           className={"status " + (el.isOnline ? "online" : "offline")}
         ></span>
-        <img className="avatar" src={el.avatar} alt={el.name} width="48" />
-        <p className="name">{el.name}</p>
+        <img className={styles.avatar} src={el.avatar} alt={el.name} width="48" />
+        <p className={styles.name}>{el.name}</p>
       </li>
     ))}
   </ul>
