@@ -1,7 +1,5 @@
 import React from "react";
 import propTypes from "prop-types";
-// eslint-disable-next-line
-import styles from "./Profile.css";
 const Profile = (props) => (
   <div className="profile">
     <div className="description">
