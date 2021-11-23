@@ -1,11 +1,11 @@
 import React from "react";
-import propTypes from "prop-types";
-import styles from "./Statistics.module.css";
-const Stat = (props) => (
+import PropTypes from 'prop-types';
+import styles from './Statistics.module.css';
+const Stat = props => (
   <section className={styles.statistics}>
-    <h2 className={styles.title}>{props.title || "Upload stats"}</h2>
+    <h2 className={styles.title}>{props.title || 'Upload stats'}</h2>
     <ul className={styles.statList}>
-      {props.stats.map((el) => (
+      {props.stats.map(el => (
         <li className={styles.item} key={el.id}>
           <span className={styles.label}>{el.label}</span>
           <span className={styles.percentage}>{el.percentage}</span>
@@ -15,8 +15,8 @@ const Stat = (props) => (
   </section>
 );
 Stat.propTypes = {
-  id: propTypes.number.isRequired,
-  title: propTypes.string.isRequired,
-  stats: propTypes.array.isRequired,
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.array.isRequired,
 };
 export default Stat;

@@ -1,8 +1,7 @@
 {
   "name": "goit-react-hw-01-components",
-  "homepage": "https://vovkis13.github.io",
+  "homepage": ".",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",

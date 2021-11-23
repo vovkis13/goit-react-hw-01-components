@@ -1,7 +1,7 @@
 import React from "react";
-import propTypes from "prop-types";
-import styles from "./Profile.module.css";
-const Profile = (props) => (
+import PropTypes from 'prop-types';
+import styles from './Profile.module.css';
+const Profile = props => (
   <div className={styles.profile}>
     <div className={styles.description}>
       <img src={props.avatar} alt={props.username} className={styles.avatar} />
@@ -27,10 +27,10 @@ const Profile = (props) => (
   </div>
 );
 Profile.propTypes = {
-  avatar: propTypes.string,
-  username: propTypes.string.isRequired,
-  tag: propTypes.string.isRequired,
-  location: propTypes.string.isRequired,
-  stats: propTypes.object,
+  avatar: PropTypes.string,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.object,
 };
 export default Profile;
