@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import styles from './FriendList.module.css';
-const FriendList = props => (
+const FriendList = ({friends}) => (
   <ul className={styles.friendList}>
-    {props.friends.map(el => (
+    {friends.map(el => (
       <li className={styles.item} key={el.id}>
         <span
           className={styles.status + ' ' + (el.isOnline ? styles.online : styles.offline)}
@@ -15,9 +15,6 @@ const FriendList = props => (
   </ul>
 );
 FriendList.propTypes = {
-  id: PropTypes.number.isRequired,
-  avatar: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
+  friends: PropTypes.array.isRequired,
 };
 export default FriendList;

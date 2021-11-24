@@ -15,8 +15,7 @@ const Stat = ({ title, stats }) => (
   </section>
 );
 Stat.propTypes = {
-  id: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
+  title: PropTypes.string,
+  stats: PropTypes.array.isRequired,
 };
 export default Stat;
