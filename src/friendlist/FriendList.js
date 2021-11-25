@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import styles from './FriendList.module.css';
+import s from './FriendList.module.css';
 const FriendList = ({friends}) => (
-  <ul className={styles.friendList}>
+  <ul className={s.friendList}>
     {friends.map(el => (
-      <li className={styles.item} key={el.id}>
+      <li className={s.item} key={el.id}>
         <span
-          className={styles.status + ' ' + (el.isOnline ? styles.online : styles.offline)}
+          className={s.status + ' ' + (el.isOnline ? s.online : s.offline)}
         ></span>
-        <img className={styles.avatar} src={el.avatar} alt={el.name} width="48" />
-        <p className={styles.name}>{el.name}</p>
+        <img className={s.avatar} src={el.avatar} alt={el.name} width="48" />
+        <p className={s.name}>{el.name}</p>
       </li>
     ))}
   </ul>

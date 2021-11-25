@@ -1,16 +1,19 @@
 import React from "react";
-import styles from "./App.module.css";
-import user from "./profile/user.json";
+
+import user from "./data/user.json";
+import data from "./data/data.json";
+import friends from "./data/friends.json";
+import transactions from "./data/transactions.json";
 import Profile from "./profile/Profile";
-import data from "./statistics/data.json";
 import Statistics from "./statistics/Statistics";
-import friends from "./friendlist/friends.json";
 import FriendList from "./friendlist/FriendList";
-import transactions from "./transactionhistory/transactions.json";
 import TransactionHistory from "./transactionhistory/TransactionHistory";
+
+import s from "./App.module.css";
+
 export default function App() {
   return (
-    <div className={styles.App}>
+    <div className={s.App}>
       <Profile
         username={user.username}
         tag={user.tag}
