@@ -1,21 +1,22 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
-const Stat = ({ title, stats }) => (
+
+const Statistics = ({ title='Upload stats', stats }) => (
   <section className={s.statistics}>
-    <h2 className={s.title}>{title || 'Upload stats'}</h2>
+    <h2 className={s.title}>{title}</h2>
     <ul className={s.statList}>
-      {stats.map(el => (
-        <li className={s.item} key={el.id}>
-          <span className={s.label}>{el.label}</span>
-          <span className={s.percentage}>{el.percentage}</span>
+      {stats.map(stat => (
+        <li className={s.item} key={stat.id}>
+          <span className={s.label}>{stat.label}</span>
+          <span className={s.percentage}>{stat.percentage}</span>
         </li>
       ))}
     </ul>
   </section>
 );
-Stat.propTypes = {
+Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.array.isRequired,
 };
-export default Stat;
+export default Statistics;
