@@ -6,7 +6,7 @@ const Profile = props => (
     <div className={styles.description}>
       <img src={props.avatar} alt={props.username} className={styles.avatar} />
       <p className={styles.name}>{props.username}</p>
-      <p className={styles.tag}>{props.tag}</p>
+      <p className={styles.tag}>@{props.tag}</p>
       <p className={styles.location}>{props.location}</p>
     </div>
 
